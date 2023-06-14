@@ -14,14 +14,14 @@
         
 
         <form action="/login/register" method="POST">
-          <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+          <input type="hidden" name="_csrf" value=<%= csrfToken %>>
           <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
+            <label class="form-label">Email address</label>
+            <input type="email" class="form-control" name="email">
           </div>
 
           <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Senha</label>
+            <label class="form-label">Senha</label>
             <input type="password" class="form-control" name="password">
           </div>
           
@@ -34,10 +34,10 @@
           <h4>Faça seu login</h4>
 
           <form action="/login/login" method="POST">
-            <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+            <input type="hidden" name="_csrf" value=<%= csrfToken %>>
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
+              <label class="form-label">Email address</label>
+              <input type="email" class="form-control" name="email">
             </div>
   
             <div class="mb-3">
